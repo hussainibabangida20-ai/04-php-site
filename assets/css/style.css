@@ -334,6 +334,60 @@ a:hover {
     font-weight: 600;
 }
 
+.message-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: 1.25rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.count-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.2rem;
+    height: 2.2rem;
+    padding: 0.25rem 0.7rem;
+    border-radius: 999px;
+    background: var(--accent);
+    color: #fff;
+}
+
+.table-wrap {
+    overflow-x: auto;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    box-shadow: var(--shadow);
+}
+
+.messages-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 900px;
+}
+
+.messages-table th,
+.messages-table td {
+    padding: 0.9rem 1rem;
+    border-bottom: 1px solid var(--border);
+    text-align: left;
+    vertical-align: top;
+}
+
+.messages-table th {
+    background: var(--surface-alt);
+    color: var(--primary);
+    font-size: 0.95rem;
+}
+
+.messages-table td {
+    color: var(--text);
+    word-break: break-word;
+}
+
 .site-footer {
     background: var(--primary);
     color: rgba(255, 255, 255, 0.85);
